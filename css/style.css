@@ -1,6 +1,25 @@
+:root {
+    --header-text-color: #ffffff;
+    --first-btn-color: #ffffff;
+    --second-btn-color: #303030;
+    --first-title-color: #ffffff;
+    --second-title-color: #303030;
+    --accent-color: #FF6C00;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
+
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
 
 .header {
     background-color: grey;
@@ -11,8 +30,7 @@ body {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: #ffffff;
-
+    color: var(--header-text-color);
 }
 
 h1 {
