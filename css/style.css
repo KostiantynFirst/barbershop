@@ -23,16 +23,36 @@ a {
 
 .header {
     background-color: grey;
-}
-
-.header-link {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.header-link {
     color: var(--header-text-color);
+}
+
+.header-link-tel {
+    color: var(--header-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color)
 }
 
 h1 {
     font-family: Raleway, sans-serif;
+}
+
+.header .btn {
+    font-family: inherit;
+    color: var(--first-btn-color);
+}
+
+.header .btn:hover,
+.header .btn:focus {
+    color: var(--first-btn-color)
 }
