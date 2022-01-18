@@ -26,21 +26,23 @@ a {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
-    letter-spacing: 0.01em;
     text-transform: uppercase;
+    color: var(--first-btn-color);
 }
 
 .header-link {
     color: var(--header-text-color);
+    letter-spacing: 0.01em;
 }
 
 .header-link-tel {
-    color: var(--header-text-color);
+    color: currentColor;
+    letter-spacing: 0.01em;
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 h1 {
@@ -50,9 +52,31 @@ h1 {
 .header .btn {
     font-family: inherit;
     color: var(--first-btn-color);
+    letter-spacing: 0.09em;
 }
 
 .header .btn:hover,
 .header .btn:focus {
-    color: var(--first-btn-color)
+    color: var(--first-btn-color);
+}
+
+
+/* Hero */
+
+
+.hero {
+    background-color: gray;
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--second-title-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--accent-color);
 }
