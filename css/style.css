@@ -19,6 +19,42 @@ a {
     text-decoration: none;
 }
 
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.after-title {
+
+
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
 /* HEADER */
 
 .header {
@@ -82,11 +118,6 @@ h1 {
 }
 
 .hero-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
 }
 
@@ -109,26 +140,14 @@ h1 {
  
 
 .about-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: var(--second-title-color);
 }
 
 .about-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 42px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
     color: var(--second-title-color);
 }
 
 .about-after-title {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
     color: #555555;
 }
 
@@ -163,18 +182,10 @@ h1 {
 }
 
 .prices-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
 }
 
 .prices-title {
-    font-size: 42px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
     color: var(--first-title-color);
 }
 
@@ -195,4 +206,102 @@ h1 {
     color: var(--first-btn-color);
 }
 
+.prices-btn:hover,
+.prices-btn:focus {
+    color: var(--accent-color);
+}
 
+
+/* Reasons */
+
+.reasons-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
+}
+
+.reasons-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    /* text-align: center; */
+    color: var(--second-title-color);
+}
+
+.reasons-pre-tittle {
+    color: var(--second-title-color);
+}
+
+.reasons-title {
+    color: var(--second-title-color);
+}
+
+.reasons-after-title {
+    color: #555555;
+}
+
+
+/* Masters */
+
+.masters-pre-title {
+    color: var(--second-title-color);
+}
+
+.masters-title {
+    color: var(--second-title-color);
+}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+
+/* Gallery */
+
+.gallery-pre-title {
+    color: var(--second-title-color);
+}
+
+
+/* Contacts */
+
+.online-title {
+    color: var(--first-title-color);
+}
+
+.contact-title {
+    color: var(--first-title-color);
+}
+
+.contacts-item-link {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.contacts-pre-title {
+    color: var(--header-text-color)
+}
+
+.contacts-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
