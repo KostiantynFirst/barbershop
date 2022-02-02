@@ -7,6 +7,23 @@
     --accent-color: #FF6C00;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -42,6 +59,13 @@ a {
     letter-spacing: 0.02em;
 }
 
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -58,12 +82,15 @@ a {
 /* HEADER */
 
 .header {
-    background-color: grey;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--first-btn-color);
+    background-color: grey;
 }
 
 .header-link {
@@ -119,6 +146,7 @@ h1 {
 
 .hero-pre-title {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
 }
 
 .hero-title {
@@ -127,6 +155,7 @@ h1 {
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: var(--first-title-color);
+    margin-bottom: 20px;
 }
 
 .hero-after-title {
@@ -139,16 +168,25 @@ h1 {
 /* About */
  
 
+.about {
+    padding-top: 139px;
+    padding-bottom: 121px;
+
+}
+
 .about-pre-title {
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .about-title {
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .about-after-title {
     color: #555555;
+    margin-bottom: 20px;
 }
 
 .about-text {
@@ -156,6 +194,7 @@ h1 {
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: #555555;
+    margin-bottom: 40px;
 }
 
 .about-btn {
@@ -179,14 +218,18 @@ h1 {
 
 .prices {
     background-color: #303030;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 .prices-pre-title {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
 }
 
 .prices-title {
     color: var(--first-title-color);
+    margin-bottom: 44px;
 }
 
 .prices-text {
@@ -214,6 +257,11 @@ h1 {
 
 /* Reasons */
 
+.reasons {
+    padding-top: 121px;
+    padding-bottom: 130px;
+}
+
 .reasons-count {
     font-weight: 700;
     font-size: 42px;
@@ -233,18 +281,28 @@ h1 {
 
 .reasons-pre-tittle {
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .reasons-title {
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .reasons-after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
     color: #555555;
 }
 
 
 /* Masters */
+
+.masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 
 .masters-pre-title {
     color: var(--second-title-color);
@@ -254,11 +312,16 @@ h1 {
     color: var(--second-title-color);
 }
 
+.masters-item-content {
+    padding-top: 30px;
+}
+
 .masters-item-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.39;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color: var(--second-title-color);
 }
 
@@ -272,8 +335,14 @@ h1 {
 
 /* Gallery */
 
+.gallery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .gallery-pre-title {
     color: var(--second-title-color);
+    margin-bottom: 44px;
 }
 
 
