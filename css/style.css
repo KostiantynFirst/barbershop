@@ -91,6 +91,10 @@ a {
     padding-bottom: 32px;
     color: var(--first-btn-color);
     background-color: grey;
+} 
+
+.logo {
+    margin-right: 70px;
 }
 
 .header-container {
@@ -104,6 +108,10 @@ a {
 
 .header-list {
     display: flex;
+}
+
+.header-item + .header-item {
+    margin-left: 40px;
 }
 
 .header-contact {
@@ -130,12 +138,18 @@ h1 {
 }
 
 .header .btn {                                                                                                                                                      
-    width: 120px;
+    min-width: 160px;
     padding: 12px 20px;
+    margin-left: 40px;
+    font-size: 12px;
     font-family: inherit;
     color: var(--first-btn-color);
     letter-spacing: 0.09em;
     text-transform: uppercase;
+   
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    background-color: transparent;
 }
 
 .header .btn:hover,
@@ -153,7 +167,21 @@ h1 {
 
 
 .hero {
+
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-right {
     background-color: gray;
+    flex-grow: 1;
+    padding: 272px 0 206px 96px;
+}
+
+.hero-list {
+    width: 93px;
 }
 
 .hero-link {
@@ -331,11 +359,28 @@ h1 {
 
 .masters-pre-title {
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .masters-title {
     color: var(--second-title-color);
+    margin-bottom: 44px;
 }
+
+
+.masters-list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.masters-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+
+/* .masters-item + .masters-item {
+    margin-left: 30px;
+} */
 
 .masters-item-content {
     padding-top: 30px;
@@ -348,6 +393,7 @@ h1 {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     color: var(--second-title-color);
+    text-align: center;
 }
 
 .masters-item-text {
@@ -355,6 +401,7 @@ h1 {
     line-height: 1.36;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    text-align: center;
 }
 
 
