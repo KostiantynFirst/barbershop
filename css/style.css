@@ -36,13 +36,13 @@ a {
     text-decoration: none;
 }
 
-.pre-title {
+/* .pre-title {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-}
+} */
 
 .title {
     font-family: "Raleway", sans-serif;
@@ -52,8 +52,6 @@ a {
 }
 
 .after-title {
-
-
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
@@ -184,7 +182,25 @@ h1 {
 }
 
 .hero-list {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
     width: 93px;
+    /* height: 100%; */
+    transform: rotate(-90deg);
+}
+
+.hero-list::before {
+    /* display: block; */
+    content: "";
+    margin-right: 40px;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+}
+
+.hero-item+.hero-item {
+    margin-left: 40px;
 }
 
 .hero-link {
@@ -203,6 +219,34 @@ h1 {
 .hero-pre-title {
     color: rgba(157, 164, 189, 0.6);
     margin-bottom: 20px;
+}
+
+.pre-title {
+    display: flex;
+    align-items: center;
+    color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.pre-title::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+}
+
+.pre-title-light-theme{
+    background-color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title-dark-theme{
+    background-color: #303030;
 }
 
 .hero-title {
