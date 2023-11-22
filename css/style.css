@@ -176,7 +176,9 @@ h1 {
 
 .hero-right {
     background-color: gray;
-    background-image: url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     flex-grow: 1;
     padding: 272px 0 206px 96px;
 }
@@ -403,6 +405,23 @@ h1 {
     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-align: center;
+    margin-bottom: 30px;
+}
+
+.masters-socials-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.masters-socials-link {
+    width: 44px;
+    height: 44px;
+    background: tomato;
+    border-radius: 50%;
+    display: block;
 }
 
 
