@@ -426,6 +426,12 @@ h1 {
     justify-content: center;
 }
 
+.masters-socials-link:hover,
+.masters-socials-link:focus 
+.masters-socials-icon{
+    fill: var(--accent-color);
+}
+
 .masters-socials-icon{
     width: 20px;
     height: 20px;
