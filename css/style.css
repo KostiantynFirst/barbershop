@@ -88,12 +88,16 @@ a {
     border: 1px solid #FF6C00;
     border-radius: 25px;
     background-color: transparent;
-    transition: color 300ms linear;
+    transition: color 300ms linear, background-color 300ms linear;
 }
 
 /* HEADER */
 
 .header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -102,7 +106,6 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--header-text-color);
-    background-color: grey;
 } 
 
 .logo {
@@ -186,13 +189,17 @@ h1 {
     padding: 272px 0 206px 96px;
 }
 
+.hero-left {
+    display: flex;
+    align-items: flex-end;
+    width: 93px;
+}
+
 .hero-list {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    width: 93px;
-    /* height: 100%; */
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(-19px);
+    transform-origin: top left;
 }
 
 .hero-list::before {
@@ -383,7 +390,9 @@ h1 {
 }
 
 .prices-btn {
+    display: block;
     color: var(--first-btn-color);
+    margin: 0 auto;
 }
 
 .prices-btn:hover,
