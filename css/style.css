@@ -77,6 +77,20 @@ a {
     margin: -1px;
   }
 
+  .btn {                                                                                                                                                      
+    min-width: 160px;
+    padding: 12px 20px;
+    margin-left: 40px;
+    font-size: 12px;
+    font-family: inherit;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: color 300ms linear;
+}
+
 /* HEADER */
 
 .header {
@@ -87,7 +101,7 @@ a {
     letter-spacing: 0.1em;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--first-btn-color);
+    color: var(--header-text-color);
     background-color: grey;
 } 
 
@@ -119,11 +133,16 @@ a {
 .header-link {
     color: var(--header-text-color);
     letter-spacing: 0.01em;
+    transition: color 300ms linear;
 }
 
 .header-link-tel {
     color: currentColor;
     letter-spacing: 0.01em;
+}
+
+.header-btn {
+    color: var(--first-btn-color);
 }
 
 .header-link:hover,
@@ -135,24 +154,10 @@ h1 {
     font-family: Raleway, sans-serif;
 }
 
-.header .btn {                                                                                                                                                      
-    min-width: 160px;
-    padding: 12px 20px;
-    margin-left: 40px;
-    font-size: 12px;
-    font-family: inherit;
-    color: var(--first-btn-color);
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-   
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
-    background-color: transparent;
-}
-
 .header .btn:hover,
 .header .btn:focus {
     color: var(--first-btn-color);
+    background-color: var(--accent-color);
 }
 
 .header-contact {
@@ -197,7 +202,7 @@ h1 {
     margin-right: 40px;
     width: 60px;
     height: 1px;
-    background-color: var(--second-btn-color);
+    background-color: var(--second-title-color);
 }
 
 .hero-item+.hero-item {
@@ -247,7 +252,7 @@ h1 {
 }
 
 .pre-title-dark-theme::before{
-    background-color:  var(--second-btn-color);
+    background-color:  var(--second-title-color);
 }
 
 .hero-title {
@@ -298,14 +303,8 @@ h1 {
     margin-bottom: 40px;
 }
 
-.about-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color:  var(--second-btn-color);
+.about-btn {                                                                                                                                                      
+    color: var(--second-btn-color);
 }
 
 
@@ -384,12 +383,6 @@ h1 {
 }
 
 .prices-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
     color: var(--first-btn-color);
 }
 
