@@ -80,7 +80,6 @@ a {
   .btn {                                                                                                                                                      
     min-width: 160px;
     padding: 12px 20px;
-    margin-left: 40px;
     font-size: 12px;
     font-family: inherit;
     letter-spacing: 0.09em;
@@ -146,6 +145,7 @@ a {
 
 .header-btn {
     color: var(--first-btn-color);
+    margin-left: 40px;
 }
 
 .header-link:hover,
@@ -305,6 +305,7 @@ h1 {
 
 .about-container {
     display: flex;
+    gap: 64px;
 }
 
 .about-list {
@@ -355,6 +356,8 @@ h1 {
 .prices {
     background-color: rgba(17, 19, 25, 1);
     background-image: url(../images/price-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 130px;
     padding-bottom: 130px;
 }
