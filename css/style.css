@@ -130,6 +130,7 @@ a {
 
 .header-contact {
     display: flex;
+    margin-right: 43px;
 }
 
 .header-link {
@@ -358,6 +359,7 @@ h1 {
     background-image: url(../images/price-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 130px;
     padding-bottom: 130px;
 }
@@ -374,6 +376,8 @@ h1 {
 
 .price-wrap {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 
 }
 
