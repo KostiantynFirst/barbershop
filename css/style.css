@@ -716,3 +716,9 @@ h1 {
     top: 10px;
     right: 10px;
 }
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
