@@ -706,7 +706,7 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.modal-close-btn {
+.modal-close {
     width: 30px;
     height: 30px;
     border-radius: 50%;

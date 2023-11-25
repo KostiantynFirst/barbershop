@@ -25,7 +25,7 @@
            </nav>
            <div class="header-contact">
             <a href="tel:+380441111111" class="header-link-tel">+38 044 111 11 11</a>
-            <button type="button" class="header-btn btn">онлайн-запись</button>  
+            <button type="button" class="header-btn btn" data-modal-open>онлайн-запись</button>  
            </div>
 
         </div>
@@ -326,10 +326,12 @@
             </ul>
         </footer>
 
-        <div class="backdrop">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="modal-close-btn">X</button>
+                <button class="modal-close" type="button" data-modal-close>X</button>
             </div>
         </div>
+
+        <script src="./js/modal.js"></script>
 </body>
 </html>  
