@@ -362,6 +362,8 @@ h1 {
     background-position: center;
     padding-top: 130px;
     padding-bottom: 130px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .prices-pre-title {
@@ -451,6 +453,17 @@ h1 {
     text-align: center;
     letter-spacing: 0.05em;
     color: var(--second-title-color);
+}
+
+.reasons-item {
+   width: 170px;
+   height: 133px;
+   background-color: #F7F7F7;
+   padding: 20px 24px;
+}
+
+reasons-item-dif {
+    padding: 20px;
 }
 
 .reasons-item-text {
