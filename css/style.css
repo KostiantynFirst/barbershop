@@ -439,20 +439,38 @@ h1 {
 }
 
 
-/* Reasons */
+/*  Reasons */
 
 .reasons {
     padding-top: 121px;
     padding-bottom: 130px;
 }
 
-.reasons-count {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: var(--second-title-color);
+
+.resons-container {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+
+.reasons-left,
+.reasons-right {
+    width: calc((100% -30px) / 2);
+}
+
+.reasons-left {
+    display: flex;
+    justify-content: center;
+}
+
+.reasons-right {
+    max-width: 500px;
+}
+
+.reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
 }
 
 .reasons-item {
@@ -462,8 +480,28 @@ h1 {
    padding: 20px 24px;
 }
 
-reasons-item-dif {
+.reasons-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.reasons-item:nth-child(even) {
+    margin-top: 30px;
+}
+
+.reasons-item-dif {
     padding: 20px;
+}
+
+.reasons-count {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 6px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
 }
 
 .reasons-item-text {
