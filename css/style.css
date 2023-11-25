@@ -92,7 +92,7 @@ a {
     transition: color 300ms linear, background-color 300ms linear;
 }
 
-/* HEADER */
+/* ------------------------- HEADER -------------------------- */
 
 .header {
     position: absolute;
@@ -187,7 +187,7 @@ h1 {
 } */
 
 
-/* Hero */
+/* ---------------------------- Hero ---------------------------- */
 
 
 /* .hero {
@@ -298,7 +298,7 @@ h1 {
     color: #9DA4BD;
 }
 
-/* About */
+/* --------------------------- About ----------------------------- */
  
 
 .about {
@@ -354,7 +354,7 @@ h1 {
 }
 
 
-/* Prices */
+/*----------------------------- Prices-------------------------- */
 
 .prices {
     background-color: rgba(17, 19, 25, 1);
@@ -441,7 +441,7 @@ h1 {
 }
 
 
-/*  Reasons */
+/*--------------------------  Reasons ------------------------ */
 
 .reasons {
     padding-top: 121px;
@@ -532,7 +532,7 @@ h1 {
 }
 
 
-/* Masters */
+/*----------------------------- Masters----------------------------- */
 
 .masters {
     padding-top: 130px;
@@ -642,7 +642,7 @@ h1 {
 }
 
 
-/* Gallery */
+/*---------------------------- Gallery------------------------------- */
 
 .gallery {
     padding-top: 130px;
@@ -682,4 +682,37 @@ h1 {
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9DA4BD;
+}
+
+
+/*----------------- Modal------------------------ */
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.267) ;
+    position: fixed;
+    top: 0;
+}
+
+.modal {
+    width: 500px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-close-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
