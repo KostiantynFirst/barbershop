@@ -693,6 +693,12 @@ h1 {
     background-color: rgba(0, 0, 0, 0.267) ;
     position: fixed;
     top: 0;
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(1.1);
 }
 
 .modal {
@@ -703,7 +709,8 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms;
 }
 
 .modal-close {
