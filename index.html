@@ -304,19 +304,28 @@
                 <section class="online">
                     <h2 class="online-title section-title">Онлайн-запись</h2>
                     <form class="online-form">
-                        <input 
+                        <div class="online-wrap">
+                            <input 
                             type="text" 
                             name="online-name" 
                             class="online-input online-input-long"
-                            placeholder="Name"
+                            placeholder="Name*"
+                            required
                             >
                         <input 
                             type="tel" 
                             name="online-tel" 
                             class="online-input"
+                            placeholder="Phone*"
+                            required
+                            >
+                        </div>
+                        <textarea 
+                            name="online-text" 
+                            class="online-text"
                             placeholder="Phone"
                             >
-                        <textarea name="online-text" class="online-text"></textarea>
+                        </textarea>
                     </form>
                 </section>
         
