@@ -680,6 +680,22 @@ h1 {
     margin-bottom: 44px;
 }
 
+.online-input {
+    width: 260px;
+    height: 24px;
+    margin-bottom: 23px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #9DA4BD66;
+    ;
+}
+
+.online-input-long {
+    width: 260px;
+}
+
+
+
 .contact-title {
     color: var(--first-title-color);
 }
