@@ -299,23 +299,32 @@
             </div>
         </section>
        
-        <section class="online-title title">
-            <h2>онлайн-запись</h2>
-        </section>
-
-        <section>
-            <h2 class="contact-title title">Контакты</h2>
-            <address class="contact-address">
-                <ul class="list">
-                    <li class="contacts-item"><a class="contacts-item-link" href="https://goo.gl/maps/aBkLpESZ6pfWBgBU9" target="_blank" rel="noopener noreferrer nofollow">ул. Васильковская, 7А
-                        Киев, 08132</a></li>
-                    <li class="contacts-item"><a class="contacts-item-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
-                    <li class="contacts-item"><a class="contacts-item-link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                </ul>
-            </address>
-            <p class="contacts-pre-title pre-title">время работы</p>
-            <p class="contacts-text">Ежедневно с 9:00 до 22:00</p>
-        </section>
+        <div class="contact-wrap">
+            <div class="container"> 
+                <section class="online">
+                    <h2 class="online-title section-title">Онлайн-запись</h2>
+                    <form class="online-form">
+                        <input type="text" name="online-name" class="online-input">
+                        <input type="tel" name="online-tel" class="online-input">
+                        <textarea name="online-text" class="online-text"></textarea>
+                    </form>
+                </section>
+        
+                <section>
+                    <h2 class="contact-title title">Контакты</h2>
+                    <address class="contact-address">
+                        <ul class="list">
+                            <li class="contacts-item"><a class="contacts-item-link" href="https://goo.gl/maps/aBkLpESZ6pfWBgBU9" target="_blank" rel="noopener noreferrer nofollow">ул. Васильковская, 7А
+                                Киев, 08132</a></li>
+                            <li class="contacts-item"><a class="contacts-item-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+                            <li class="contacts-item"><a class="contacts-item-link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                        </ul>
+                    </address>
+                    <p class="contacts-pre-title pre-title">время работы</p>
+                    <p class="contacts-text">Ежедневно с 9:00 до 22:00</p>
+                </section>
+            </div>
+        </div>
     </main>
         
         <footer>
@@ -326,11 +335,11 @@
             </ul>
         </footer>
 
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal-backdrop>
             <div class="modal">
                 <button class="modal-close" type="button" data-modal-close>X</button>
                 <p class="modal-title">Онлайн-запись в барбершоп</p>
-                <form class="modal-form">
+                <form class="modal-form" data-modal>
                     <label for="user-name" class="modal-label">Введите ваше имя</label>
                     <input type="text" name="user-name" class="modal-input" placeholder="Your name" required id="user-name">
                     
