@@ -684,6 +684,7 @@ h1 {
 .online-wrap {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     margin-bottom: 23px;
 }
 
@@ -725,18 +726,14 @@ h1 {
     font-weight: 600;
     line-height:  1.36;
     letter-spacing: 0.1em;
-    text-align: left;
     text-transform: uppercase;
-    outline: none;
 
+    color: rgba(157, 164, 189, 0.4);
+    background-color: transparent;
     border: none;
     resize: none;
-
-    color: #9DA4BD66;
-    background-color: #191C26;
+    outline: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.12);
-
-
 
 }
 
