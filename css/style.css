@@ -737,6 +737,7 @@ h1 {
 
     color: #fff;
     transition: border-color 500ms;
+    margin-bottom: 44px;
 }
 
 .online-input::placeholder,
@@ -757,6 +758,10 @@ h1 {
 .online-text:hover::placeholder,
 .online-text:focus::placeholder {
     color: #fff;
+}
+
+.online-btn {
+   color: var(--first-btn-color) 
 }
 
 .contact-title {
@@ -954,8 +959,8 @@ h1 {
     resize: none;
     outline: none;
   }
-  
-  button[type="submit"] {
+
+  .modal-btn {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -965,7 +970,7 @@ h1 {
     transition: background-color 0.3s ease;
   }
   
-  button[type="submit"]:hover {
+  .modal-btn:hover {
     background-color: #0056b3;
   }
 
