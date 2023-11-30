@@ -478,6 +478,7 @@ h1 {
 .reasons-item {
    width: 170px;
    height: 133px;
+   text-align: center;
    background-color: var(--bg-color);
    padding: 20px 24px;
 }
