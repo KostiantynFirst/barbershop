@@ -710,8 +710,8 @@ h1 {
     color: #9DA4BD66;
     background-color: transparent;
 
-
-
+    transition: border-color 500ms;
+    color: #fff;
 }
 
 .online-input-long {
@@ -735,8 +735,29 @@ h1 {
     outline: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.12);
 
+    color: #fff;
+    transition: border-color 500ms;
 }
 
+.online-input::placeholder,
+.online-text::placeholder {
+    transition: color 500ms;
+}
+
+.online-input:hover,
+.online-input:focus,
+.online-text:hover,
+.online-text:focus {
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.online-input:hover::placeholder,
+.online-input:focus::placeholder,
+.online-text:hover::placeholder,
+.online-text:focus::placeholder {
+    color: #fff;
+}
 
 .contact-title {
     color: var(--first-title-color);
