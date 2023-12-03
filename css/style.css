@@ -766,6 +766,13 @@ h1 {
     color: #fff;
 }
 
+
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    align-items: center;
+}
+
 .online-btn {
    color: var(--first-btn-color) 
 }
