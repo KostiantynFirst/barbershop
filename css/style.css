@@ -777,7 +777,20 @@ h1 {
 }
 
 .contacts-icon {
-    
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+
+.contacts-icon-mail {
+    width: 18px;
+    height: 14px;
+    margin-right: 16px;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
 }
 
 .online-btn {
@@ -789,6 +802,7 @@ h1 {
 }
 
 .contacts-item-link {
+    max-width: 230px;
     font-style: normal;
     font-size: 18px;
     line-height: 1.67;
