@@ -770,7 +770,10 @@ h1 {
 .contacts {
     padding-top: 130px;
     padding-bottom: 130px;
-    align-items: center;
+    padding-left: 99px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .online-btn {
