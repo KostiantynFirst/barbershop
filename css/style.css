@@ -910,3 +910,31 @@ h1 {
     background-color: #0056b3;
   }
 
+
+  /*--------------- Footer------------------- */
+
+.footer-container {
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-size: 11px;
+    color:#9DA4BD;
+}
+
+.footer-copy {
+    margin-left: 2px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 40px;
+} 
+
+.footer-list-link {
+    font-size: 10px;
+    color: #303030;
+}
