@@ -23,6 +23,8 @@ button {
 }
 
 img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -61,6 +63,7 @@ a {
 
 .container {
     max-width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -262,7 +265,7 @@ h1 {
 
     font-weight: 600;
     font-size: 11px;
-    line-height: 1.36;
+    line-height: 21px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -646,18 +649,37 @@ h1 {
 /*---------------------------- Gallery------------------------------- */
 
 .gallery {
-    padding: 130px 55px;
-}
+    /* padding-top: 130px;
+    padding-bottom : 130px; */
 
-.gallery-list {
-    display: flex;
-    gap: 30px;
+    padding-top: 84px;
+    padding-bottom: 84px;
 }
 
 .gallery-pre-title {
     color: var(--second-title-color);
     margin-bottom: 44px;
 }
+
+/* .gallery-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+.gallery-list {
+
+    margin-bottom: -30px;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; */
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+}
+
 
 
 /*---------------- Contacts------------------ */
@@ -937,4 +959,19 @@ h1 {
 .footer-list-link {
     font-size: 10px;
     color: #303030;
+}
+
+
+/*-------------- Media--------------- */
+
+@media screen and (min-width: 480px){
+    .container {
+        width: 448px;
+    }  
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 720px;
+    }  
 }
