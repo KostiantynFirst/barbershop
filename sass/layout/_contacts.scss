@@ -99,7 +99,7 @@
     transition: border-color 500ms;
     margin-bottom: 44px;
 
-    &:placeholder {
+    &::placeholder {
         transition: color 500ms;
     }
 
