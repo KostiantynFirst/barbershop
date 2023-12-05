@@ -1,0 +1,131 @@
+.masters {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-color: var(--bg-color);
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      @media screen and (min-width: 1200px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+      }
+}
+
+.masters-pre-title {
+    color: var(--second-title-color);
+    margin-bottom: 20px;
+}
+
+.masters-title {
+    color: var(--second-title-color);
+    margin-bottom: 44px;
+}
+
+
+.masters-list {
+    margin-left: -30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+      }
+      .masters-list__item {
+        margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+          width: calc(100% / 2 - 30px);
+          margin-left: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+          width: calc(100% / 4 - 30px);
+        }
+      }
+}
+
+.masters-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+
+.masters-item:hover .masters-top-text {
+    transform: translateY(0);
+}
+
+.masters-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.masters-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 600;
+    background-color: #ff6a00a7;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
+
+/* .masters-item + .masters-item {
+    margin-left: 30px;
+} */
+
+.masters-item-content {
+    padding-top: 30px;
+}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    color: var(--second-title-color);
+    text-align: center;
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.masters-socials-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.masters-socials-link {
+    width: 44px;
+    height: 44px;
+    background: var(--first-title-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.masters-socials-link:hover,
+.masters-socials-link:focus 
+.masters-socials-icon{
+    fill: var(--accent-color);
+}
+
+.masters-socials-icon{
+    width: 20px;
+    height: 20px;
+}
