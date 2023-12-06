@@ -627,6 +627,7 @@ h1 {
 
 .masters-list {
   margin-left: -30px;
+  margin-bottom: -64px;
 }
 @media screen and (min-width: 768px) {
   .masters-list {
@@ -653,6 +654,7 @@ h1 {
 .masters-item {
   flex-basis: calc(33.3333333333% - 30px);
   margin-left: 30px;
+  margin-bottom: 64px;
 }
 
 .masters-item:hover .masters-top-text {

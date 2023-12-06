@@ -26,6 +26,7 @@
 
 .masters-list {
     margin-left: -30px;
+    margin-bottom: -64px;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -48,6 +49,7 @@
 .masters-item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
+    margin-bottom: 64px;
 }
 
 .masters-item:hover .masters-top-text {
