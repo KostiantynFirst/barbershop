@@ -4,19 +4,24 @@
     color: rgba(157, 164, 189, 0.6);
     margin-bottom: 20px;
 
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 21px;
-    letter-spacing: 0.1em;
+    @include font(11px, 600, 21px, 0.1em);
+    @include tab {
+        @include font(11px, null, 15px, null);
+      }
+    // font-weight: 600;
+    // font-size: 11px;
+    // line-height: 21px;
+    // letter-spacing: 0.1em;
     text-transform: uppercase;
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+    }
 }
 
-.pre-title::before {
-    content: "";
-    width: 60px;
-    height: 1px;
-    margin-right: 20px;
-}
 
 .pre-title-light-theme::before{
     background-color: rgba(157, 164, 189, 0.6);

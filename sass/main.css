@@ -80,13 +80,18 @@ img {
   align-items: center;
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
-  font-weight: 600;
   font-size: 11px;
-  line-height: 21px;
+  font-weight: 600;
+  line-height: 1.9090909091;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
+@media screen and (min-width: 768px) {
+  .pre-title {
+    font-size: 11px;
+    line-height: 1.3636363636;
+  }
+}
 .pre-title::before {
   content: "";
   width: 60px;
