@@ -310,6 +310,20 @@ h1 {
 
 .hero-container {
   display: flex;
+  width: 100%;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero-container {
+    width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    width: 1200px;
+  }
 }
 
 .hero-right {
@@ -318,15 +332,32 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   flex-grow: 1;
-  padding: 272px 0 206px 96px;
+  padding: 288px 0 183px 31px;
+}
+@media screen and (min-width: 768px) {
+  .hero-right {
+    padding: 280px 0 234px 70px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-right {
+    padding: 208px 0 183px 31px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  }
 }
 
 .hero-left {
-  display: flex;
+  display: none;
   align-items: flex-end;
   width: 93px;
   padding-left: 23px;
   padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .hero-left {
+    display: flex;
+  }
 }
 
 .hero-list {
@@ -370,18 +401,37 @@ h1 {
 
 .hero-title {
   font-family: "Raleway", sans-serif;
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 48px;
+  line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--first-title-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: 1.18;
+  }
+}
 
 .hero-after-title {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9DA4BD;
+  max-width: 360px;
+}
+@media screen and (min-width: 768px) {
+  .hero-after-title {
+    max-width: 349px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-after-title {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .about {
@@ -783,7 +833,7 @@ h1 {
     margin-left: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .gallery-item {
     width: calc(25% - 30px);
   }

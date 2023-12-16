@@ -1,5 +1,16 @@
 .hero-container {
     display: flex;
+    width: 100%;
+    padding: 0;
+
+    @include tab {
+        width: 720px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @include desk {
+        width: 1200px;
+      }
 }
 
 .hero-right {
@@ -8,15 +19,39 @@
     background-repeat: no-repeat;
     background-position: center;
     flex-grow: 1;
-    padding: 272px 0 206px 96px;
+    // padding: 272px 0 206px 96px;
+    padding: 288px 0 183px 31px;
+
+
+    @include tab {
+        padding: 280px 0 234px 70px;
+        background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)
+          )
+    }
+
+    @include desk {
+        padding: 208px 0 183px 31px;
+        background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)
+          )
+
+    }
+
 }
 
 .hero-left {
-    display: flex;
+    display: none;
     align-items: flex-end;
     width: 93px;
     padding-left: 23px;
     padding-bottom: 40px;
+
+    @include tab {
+        display: flex;
+      }
 }
 
 .hero-list {
@@ -62,16 +97,33 @@
 
 .hero-title {
     font-family: "Raleway", sans-serif;
-    font-size: 72px;
-    line-height: 1.18;
+    font-size: 48px;
+    line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--first-title-color);
     margin-bottom: 20px;
+
+    @include desk {
+        font-size: 72px;
+        line-height: 1.18;
+      }
 }
 
 .hero-after-title {
-    font-size: 18px;
-    line-height: 1.67;
+
+    font-size: 16px;
+    line-height: 1.62;
     letter-spacing: 0.02em;
     color: #9DA4BD;
+    max-width: 360px;
+
+    @include tab {
+        max-width: 349px;
+      }
+    
+      @include desk {
+        max-width: 400px;
+        font-size: 18px;
+        line-height: 1.67;
+      }
 }
