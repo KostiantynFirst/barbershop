@@ -97,11 +97,15 @@
 
 .hero-title {
     font-family: "Raleway", sans-serif;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--first-title-color);
     margin-bottom: 20px;
+
+    @include tab {
+        font-size: 46px;
+      }
 
     @include desk {
         font-size: 72px;
