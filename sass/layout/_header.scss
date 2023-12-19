@@ -27,7 +27,8 @@
 }
 
 .header-list {
-    display: flex;
+    // display: flex;
+    display: none;
 }
 
 .header-item + .header-item {
@@ -75,4 +76,5 @@ h1 {
 .header-contact {
     margin-left: auto;
     align-items: center;
+    display: none;
 }
