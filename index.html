@@ -25,13 +25,57 @@
            </nav>
            <div class="header-contact">
             <a href="tel:+380441111111" class="header-link-tel">+38 044 111 11 11</a>
-            <button class="menu-button" type="button" class="header-btn btn" data-modal-open>онлайн-запись</button>  
+            <button type="button" class="header-btn btn" data-modal-open>онлайн-запись</button>  
            </div>
-           <button type="button">
+           <button class="menu-open-btn" type="button">
             <svg class="masters-socials-icon">
                 <use href="./images/icons.svg#icon-menu"></use>
             </svg>
            </button>
+           <div class="mob-menu is-hidden">
+            <div class="container">
+              <div class="mob-menu-top">
+                <button type="button" class="menu-close-btn">X</button>
+                <ul class="mob-menu-list list">
+                  <li class="mob-menu-list__item">
+                    <a href="" class="mob-menu-list__link">О нас</a>
+                  </li>
+                  <li class="mob-menu-list__item">
+                    <a href="./portfolio.html" class="mob-menu-list__link"
+                      >Услуги и цены</a
+                    >
+                  </li>
+                  <li class="mob-menu-list__item">
+                    <a href="#masters" class="mob-menu-list__link">Мастера</a>
+                  </li>
+                  <li class="mob-menu-list__item">
+                    <a href="" class="mob-menu-list__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mob-menu-bottom">
+                <div class="mob-contacts">
+                  <a href="tel:+380441111111" class="mob-contacts__tel"
+                    >+38 044 111 11 11</a
+                  >
+                  <button
+                    type="button"
+                    class="mob-contacts__btn btn"
+                    data-modal-open
+                  >
+                    онлайн-запись
+                  </button>
+                </div>
+                <ul class="mob-soc-list list">
+                  <li class="mob-soc-list__item">
+                    <a href="" class="mob-soc-list__link">Instagram</a>
+                  </li>
+                  <li class="mob-soc-list__item">
+                    <a href="" class="mob-soc-list__link">Youtube</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </div>
     </header> 
     <main>
@@ -408,5 +452,6 @@
         </div> -->
 
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>  
